@@ -1,0 +1,10 @@
+<div class="login">
+<%= form_tag(:action => 'create') do %>
+		<%= text_field_tag('name', params[:name], placeholder: 'Name') %>
+		<%=text_field_tag('email', params[:email], placeholder: 'Email') %>
+		<%=password_field_tag('password', params[:password], placeholder: 'Password')%>
+		<%=submit_tag('Create') %>
+	<%end%>
+</div>
+<div class="shadow"></div>
+`

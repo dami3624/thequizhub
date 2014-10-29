@@ -1,0 +1,30 @@
+<!-- <h1>QuizHub#index</h1>
+<p>Find me in app/views/quiz_hub/index.html.erb</p> -->
+<div class="login">
+<%= form_for(:users, :url => {:controller => 'quiz_hub', :action => ''}) do |f| %>
+		<%=f.text_field(:email, placeholder: 'Email') %>
+		<%=f.text_field(:password, placeholder: 'Password')%>
+		<%=submit_tag(:Login) %>
+<%end%>
+</div>
+<div class="shadow"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="login">
+    <input type="text" placeholder="email" id="username">  
+  <input type="password" placeholder="password" id="password">  
+  <a href="#" class="forgot">forgot password?</a>
+  <input type="submit" value="Sign In">
+</div>
+<div class="shadow"></div> -->
